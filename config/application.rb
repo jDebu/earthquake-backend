@@ -37,6 +37,7 @@ module EarthquakeBackend
     # config.eager_load_paths << Rails.root.join("extras")
 
     # Don't generate system test files.
+    config.hosts << "localhost:3000"
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins ENV['FRONTEND_URL_BASE'] || 'http://localhost:5173'

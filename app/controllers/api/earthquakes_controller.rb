@@ -6,7 +6,7 @@ class Api::EarthquakesController < ApiController
 
   def index
     @earthquakes = filtered_earthquakes(@filtered_params)
-    @earthquakes = @earthquakes.page(params[:page] || 1).per(params[:per_page] || 10)
+    @earthquakes = @earthquakes.page(params[:page] || 1).per(params[:per_page] || 12)
   end
 
   def show; end
