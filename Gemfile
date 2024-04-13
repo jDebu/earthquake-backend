@@ -27,3 +27,7 @@ group :development do
   # gem "spring"
 end
 
+
+gem "kaminari", "~> 1.2"
+
+gem "jbuilder", "~> 2.11"
