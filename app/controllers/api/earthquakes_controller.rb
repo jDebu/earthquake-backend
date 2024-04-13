@@ -2,11 +2,14 @@ class Api::EarthquakesController < ApiController
   include EarthquakesHelper
 
   before_action :validate_params, only: [:index]
+  before_action :set_earthquake, only: [:show]
 
   def index
     @earthquakes = filtered_earthquakes(@filtered_params)
     @earthquakes = @earthquakes.page(params[:page] || 1).per(params[:per_page] || 10)
   end
+
+  def show; end
 
   private
 
@@ -30,4 +33,9 @@ class Api::EarthquakesController < ApiController
       return
     end
   end
+
+  def set_earthquake
+    @earthquake = Earthquake.find(params[:id])
+  end
+
 end

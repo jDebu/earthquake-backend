@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   scope '/backend' do
     namespace :api do
       resources :earthquakes
+      resources :comments
     end
   end
 end
