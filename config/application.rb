@@ -38,6 +38,7 @@ module EarthquakeBackend
 
     # Don't generate system test files.
     config.hosts << "localhost:3000"
+    config.hosts << "jdebu.work"
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins ENV['FRONTEND_URL_BASE'] || 'http://localhost:5173'
