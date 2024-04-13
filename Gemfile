@@ -31,3 +31,5 @@ end
 gem "kaminari", "~> 1.2"
 
 gem "jbuilder", "~> 2.11"
+
+gem "rack-cors", "~> 2.0"
