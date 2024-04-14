@@ -33,3 +33,5 @@ gem "kaminari", "~> 1.2"
 gem "jbuilder", "~> 2.11"
 
 gem "rack-cors", "~> 2.0"
+
+gem "whenever", "~> 1.0", require: false

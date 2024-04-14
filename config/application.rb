@@ -37,6 +37,7 @@ module EarthquakeBackend
     # config.eager_load_paths << Rails.root.join("extras")
 
     # Don't generate system test files.
+    config.time_zone = 'Lima'
     config.hosts << "localhost:3000"
     config.hosts << "jdebu.work"
     config.middleware.insert_before 0, Rack::Cors do
